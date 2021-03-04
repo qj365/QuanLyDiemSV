@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDiemSV
 {
-    public partial class Dashboard : Form
+    public partial class frDashboard : Form
     {
-        public Dashboard()
+        public frDashboard()
         {
             InitializeComponent();
         }
