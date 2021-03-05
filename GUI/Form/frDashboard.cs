@@ -14,7 +14,7 @@ namespace QuanLyDiemSV
     public partial class frDashboard : Form
     {
         public frDashboard()
-        {
+        {   //quang pro
             InitializeComponent();
             timerClock.Start();
             UC_Khoa uck = new UC_Khoa();
