@@ -42,23 +42,53 @@ namespace QuanLyDiemSV
 
         private void btnLop_Click(object sender, EventArgs e)
         {
-            UC_LopHoc uclh = new UC_LopHoc();
+            UC_LopCN uclh = new UC_LopCN();
             addControlToPanel(uclh);
-        }
-
-        private void btnMon_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnGiaoVien_Click(object sender, EventArgs e)
         {
-
+            UC_GiaoVien ucgv = new UC_GiaoVien();
+            addControlToPanel(ucgv);
+        }
+        private void btnHocPhan_Click(object sender, EventArgs e)
+        {
+            UC_HocPhan uchp = new UC_HocPhan();
+            addControlToPanel(uchp);
+        }
+        private void btnSinhVien_Click(object sender, EventArgs e)
+        {
+            UC_SinhVien ucsv = new UC_SinhVien();
+            addControlToPanel(ucsv);
+        }
+        private void btnLopCN_Click(object sender, EventArgs e)
+        {
+            UC_LopCN uclcn = new UC_LopCN();
+            addControlToPanel(uclcn);
         }
 
+        private void btnLopHP_Click(object sender, EventArgs e)
+        {
+            UC_LopHP uclhp = new UC_LopHP();
+            addControlToPanel(uclhp);
+        }
+
+        private void btnDiem_Click(object sender, EventArgs e)
+        {
+            UC_DiemSV ucdsv = new UC_DiemSV();
+            addControlToPanel(ucdsv);
+        }
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                this.Dispose();
+        }
+
+        
     }
 }

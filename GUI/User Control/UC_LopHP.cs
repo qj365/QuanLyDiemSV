@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
-    public partial class UC_LopHoc : UserControl
+    public partial class UC_LopHP : UserControl
     {
-        public UC_LopHoc()
+        public UC_LopHP()
         {
             InitializeComponent();
         }

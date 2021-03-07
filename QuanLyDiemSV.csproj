@@ -34,11 +34,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.Dataviz.WinForms">
+      <HintPath>..\Bunifu_UI_WinForms_1.11.5.1\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
@@ -65,6 +71,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\Form\frBangDiemCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\frBangDiemCT.Designer.cs">
+      <DependentUpon>frBangDiemCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\frGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\frGiaoVien.Designer.cs">
+      <DependentUpon>frGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form\frSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form\frSinhVien.Designer.cs">
+      <DependentUpon>frSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form\frDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +101,23 @@
     <Compile Include="GUI\Form\frLogin.Designer.cs">
       <DependentUpon>frLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\UC_DiemSV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_DiemSV.Designer.cs">
+      <DependentUpon>UC_DiemSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\User Control\UC_GiaoVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\User Control\UC_GiaoVien.Designer.cs">
       <DependentUpon>UC_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_HocPhan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_HocPhan.Designer.cs">
+      <DependentUpon>UC_HocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\User Control\UC_Khoa.cs">
       <SubType>UserControl</SubType>
@@ -89,29 +125,63 @@
     <Compile Include="GUI\User Control\UC_Khoa.Designer.cs">
       <DependentUpon>UC_Khoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User Control\UC_LopHoc.cs">
+    <Compile Include="GUI\User Control\UC_LopCN.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\User Control\UC_LopHoc.Designer.cs">
-      <DependentUpon>UC_LopHoc.cs</DependentUpon>
+    <Compile Include="GUI\User Control\UC_LopCN.Designer.cs">
+      <DependentUpon>UC_LopCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_LopHP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_LopHP.Designer.cs">
+      <DependentUpon>UC_LopHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_SinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_SinhVien.Designer.cs">
+      <DependentUpon>UC_SinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Form\frBangDiemCT.resx">
+      <DependentUpon>frBangDiemCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\frGiaoVien.resx">
+      <DependentUpon>frGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form\frSinhVien.resx">
+      <DependentUpon>frSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\frDashboard.resx">
       <DependentUpon>frDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form\frLogin.resx">
       <DependentUpon>frLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\UC_DiemSV.resx">
+      <DependentUpon>UC_DiemSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\UC_GiaoVien.resx">
       <DependentUpon>UC_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\UC_HocPhan.resx">
+      <DependentUpon>UC_HocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User Control\UC_Khoa.resx">
       <DependentUpon>UC_Khoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\User Control\UC_LopHoc.resx">
-      <DependentUpon>UC_LopHoc.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\User Control\UC_LopCN.resx">
+      <DependentUpon>UC_LopCN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\UC_LopHP.resx">
+      <DependentUpon>UC_LopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User Control\UC_SinhVien.resx">
+      <DependentUpon>UC_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

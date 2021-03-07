@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
-    public partial class UC_GiaoVien : UserControl
+    public partial class UC_SinhVien : UserControl
     {
-        public UC_GiaoVien()
+        public UC_SinhVien()
         {
             InitializeComponent();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            using (frGiaoVien frgv = new frGiaoVien())
+            using (frSinhVien frsv = new frSinhVien())
             {
-                frgv.ShowDialog();
+                frsv.ShowDialog();
             }
         }
     }

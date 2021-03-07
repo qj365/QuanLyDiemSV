@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
-    public partial class UC_GiaoVien : UserControl
+    public partial class UC_HocPhan : UserControl
     {
-        public UC_GiaoVien()
+        public UC_HocPhan()
         {
             InitializeComponent();
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            using (frGiaoVien frgv = new frGiaoVien())
-            {
-                frgv.ShowDialog();
-            }
         }
     }
 }
