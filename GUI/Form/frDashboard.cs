@@ -86,7 +86,7 @@ namespace QuanLyDiemSV
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-                this.Dispose();
+                this.Close();
         }
 
         

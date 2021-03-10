@@ -121,7 +121,7 @@
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFGSURBVChTDc3bdppQAADR896qKKIigjYf2zbeFRUUQfGG
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFGSURBVChTDc3bdppQAADR896qKKIigjYf2zbeFRUUQfGG
         ooBGk6ZJu/pp0/M+e40ozvsozhhl6lCwPfLjFfnhjlz/SK6b8LV948vzK0L1e5S8EaXFjKK7QJkFKJMt
         hXFEYXQhP7iS6z0QWtilvBpRDqaoy7kEASV3Q3EWUZyeUexMAhlWDx0quyGVzQRt7UrkU/ZDVO+AOo8p
         OalEd4Qet6kdB9QONtWdQ2W7pBKu0VZ7NP9E2UtQFy+Ietqmfumjn21qJ4da5FHdr6lud/JykpcELbgh
@@ -130,24 +130,24 @@
         KQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

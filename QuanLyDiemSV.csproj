@@ -71,6 +71,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="GUI\Form\frBangDiemCT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +209,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mta_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

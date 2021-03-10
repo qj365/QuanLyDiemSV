@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using QuanLyDiemSV.DAO;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
@@ -24,5 +26,6 @@ namespace QuanLyDiemSV.GUI.User_Control
                 frgv.ShowDialog();
             }
         }
+      
     }
 }
