@@ -14,19 +14,75 @@ namespace QuanLyDiemSV.GUI.User_Control
 {
     public partial class UC_Khoa : UserControl
     {
+        BindingSource khoaList = new BindingSource();
+
         public UC_Khoa()
         {
             InitializeComponent();
-            LoadListKhoa();
+            Load();
         }
         #region Method
+        void Load()
+        {
+            dtgvKhoa.DataSource = khoaList;
+            LoadListKhoa();
+            AddKhoaBinding();
+        }
         void LoadListKhoa()
         {
-            dtgvKhoa.DataSource = KhoaDAO.Instance.GetListKhoa();
+            khoaList.DataSource = KhoaDAO.Instance.GetListKhoa();
+        }
+        void AddKhoaBinding()
+        {
+            txbMaKhoa.DataBindings.Add(new Binding("Text",dtgvKhoa.DataSource,"MaKhoa", true, DataSourceUpdateMode.Never));
+            txbTenKhoa.DataBindings.Add(new Binding("Text", dtgvKhoa.DataSource, "TenKhoa", true, DataSourceUpdateMode.Never));
         }
         #endregion
 
         #region Event
+        private void btnThemKhoa_Click(object sender, EventArgs e)
+        {
+            string makhoa = txbMaKhoa.Text;
+            string tenkhoa = txbTenKhoa.Text;
+            if (KhoaDAO.Instance.InsertKhoa(makhoa, tenkhoa))
+            {
+                MessageBox.Show("Thêm khoa thành công");
+                LoadListKhoa();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi thêm khoa");
+            }    
+        }
         #endregion
+
+        private void btnSuaKhoa_Click(object sender, EventArgs e)
+        {
+            string makhoa = txbMaKhoa.Text;
+            string tenkhoa = txbTenKhoa.Text;
+            if (KhoaDAO.Instance.UpdateKhoa(tenkhoa, makhoa))
+            {
+                MessageBox.Show("Sửa khoa thành công");
+                LoadListKhoa();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi sửa khoa");
+            }
+        }
+
+        private void btnXoaKhoa_Click(object sender, EventArgs e)
+        {
+            string makhoa = txbMaKhoa.Text;
+            if (KhoaDAO.Instance.DeleteKhoa(makhoa))
+            {
+                MessageBox.Show("Xóa khoa thành công");
+                LoadListKhoa();
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi xóa khoa");
+            }
+        }
     }
 }

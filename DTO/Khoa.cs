@@ -9,7 +9,7 @@ namespace QuanLyDiemSV.DTO
 {
     public class Khoa
     {
-        public Khoa(string makhoa, string tenkhoa)
+        public Khoa( string makhoa, string tenkhoa)
         {
             this.MaKhoa = makhoa;
             this.TenKhoa = tenkhoa;

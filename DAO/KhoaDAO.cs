@@ -32,6 +32,32 @@ namespace QuanLyDiemSV.DAO
             }
             return list;
         }
+
+        public bool InsertKhoa( string makhoa, string tenkhoa)
+        {
+            string query = string.Format("insert dbo.KHOA ( MAKHOA, TENKHOA ) values ( N'{0}', N'{1}' )", makhoa, tenkhoa);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool UpdateKhoa( string tenkhoa, string makhoa)
+        {
+            string query = string.Format("update dbo.KHOA set TENKHOA = N'{0}' where MAKHOA = N'{1}' ", tenkhoa, makhoa);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteKhoa(string makhoa)
+        {
+            GiaoVienDAO.Instance.DeleteGiaoVienByMaKhoa(makhoa);
+            LopCNDAO.Instance.DeleteLopCNByMaKhoa(makhoa);
+            string query = string.Format(" delete from dbo.KHOA where MAKHOA = N'{0}' ",makhoa );
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
     }
 }
 

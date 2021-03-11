@@ -32,6 +32,10 @@ namespace QuanLyDiemSV.DAO
             }
             return list;
         }
+        public void DeleteLopCNByMaKhoa(string makhoa)
+        {
+            DataProvider.Instance.ExecuteQuery("delete from dbo.LopCN where MAKHOA = " + makhoa);
+        }
     }
 }
 

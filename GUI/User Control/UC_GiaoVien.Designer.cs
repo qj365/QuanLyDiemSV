@@ -453,7 +453,6 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThem.TextMarginLeft = 15;
             this.btnThem.UseDefaultRadiusAndThickness = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox2
             // 

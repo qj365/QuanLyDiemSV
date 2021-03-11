@@ -132,10 +132,20 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DiemSVDAO.cs" />
+    <Compile Include="DAO\GiaoVienDAO.cs" />
+    <Compile Include="DAO\HocPhanDAO.cs" />
     <Compile Include="DAO\KhoaDAO.cs" />
     <Compile Include="DAO\LopCNDAO.cs" />
+    <Compile Include="DAO\LopHPDAO.cs" />
+    <Compile Include="DAO\SinhVienDAO.cs" />
+    <Compile Include="DTO\DiemSV.cs" />
+    <Compile Include="DTO\GiaoVien.cs" />
+    <Compile Include="DTO\HocPhan.cs" />
     <Compile Include="DTO\Khoa.cs" />
     <Compile Include="DTO\LopCN.cs" />
+    <Compile Include="DTO\LopHP.cs" />
+    <Compile Include="DTO\SinhVien.cs" />
     <Compile Include="GUI\Form\frBangDiemCT.cs">
       <SubType>Form</SubType>
     </Compile>
