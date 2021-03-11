@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyDiemSV.DAO;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
@@ -15,11 +16,11 @@ namespace QuanLyDiemSV.GUI.User_Control
         public UC_LopCN()
         {
             InitializeComponent();
+            LoadListLopCN();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        void LoadListLopCN()
         {
-
+            dtgvLopCN.DataSource = LopCNDAO.Instance.GetListLopCN();
         }
     }
 }

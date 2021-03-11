@@ -20,7 +20,7 @@ namespace QuanLyDiemSV.DAO
         public bool Login(string username,string password)
         {
             string q = "select * from GIAOVIEN where MAGV = '"+@username+"' and MATKHAU = '"+@password+"'";
-            DataTable s = DataProvider.Instance.executeQuery(q,new object[] { username, password });
+            DataTable s = DataProvider.Instance.ExecuteQuery(q,new object[] { username, password });
             return s.Rows.Count > 0;
         }
     }

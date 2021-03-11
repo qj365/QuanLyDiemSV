@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyDiemSV.DTO;
+using QuanLyDiemSV.DAO;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
@@ -15,6 +17,16 @@ namespace QuanLyDiemSV.GUI.User_Control
         public UC_Khoa()
         {
             InitializeComponent();
+            LoadListKhoa();
         }
+        #region Method
+        void LoadListKhoa()
+        {
+            dtgvKhoa.DataSource = KhoaDAO.Instance.GetListKhoa();
+        }
+        #endregion
+
+        #region Event
+        #endregion
     }
 }
