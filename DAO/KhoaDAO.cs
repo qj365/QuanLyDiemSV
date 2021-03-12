@@ -33,6 +33,20 @@ namespace QuanLyDiemSV.DAO
             return list;
         }
 
+        public Khoa GetKhoaByMaKhoa(string makhoa)
+        {
+            Khoa khoa = null;
+            string query = "select * from KHOA where MAKHOA = " + makhoa;
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                khoa = new Khoa(item);
+                return khoa;
+            }
+
+            return khoa;
+        }
         public bool InsertKhoa( string makhoa, string tenkhoa)
         {
             string query = string.Format("insert dbo.KHOA ( MAKHOA, TENKHOA ) values ( N'{0}', N'{1}' )", makhoa, tenkhoa);
@@ -51,8 +65,10 @@ namespace QuanLyDiemSV.DAO
 
         public bool DeleteKhoa(string makhoa)
         {
-            GiaoVienDAO.Instance.DeleteGiaoVienByMaKhoa(makhoa);
+            HocPhanDAO.Instance.DeleteHocPhanByMaKhoa(makhoa);
             LopCNDAO.Instance.DeleteLopCNByMaKhoa(makhoa);
+            GiaoVienDAO.Instance.DeleteGiaoVienByMaKhoa(makhoa);
+            
             string query = string.Format(" delete from dbo.KHOA where MAKHOA = N'{0}' ",makhoa );
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

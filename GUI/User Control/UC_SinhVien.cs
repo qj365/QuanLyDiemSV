@@ -7,22 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyDiemSV.DAO;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
     public partial class UC_SinhVien : UserControl
     {
+        BindingSource sinhvienList = new BindingSource();
+
         public UC_SinhVien()
         {
             InitializeComponent();
+            Load();
         }
-
-        private void btnThem_Click(object sender, EventArgs e)
+        #region Method
+        void Load()
         {
-            using (frSinhVien frsv = new frSinhVien())
-            {
-                frsv.ShowDialog();
-            }
+            dtgvSinhVien.DataSource = sinhvienList;
+            LoadListSinhVien();
         }
+        void LoadListSinhVien()
+        {
+            sinhvienList.DataSource = SinhVienDAO.Instance.GetListLopCN();
+        }
+        #endregion
     }
 }

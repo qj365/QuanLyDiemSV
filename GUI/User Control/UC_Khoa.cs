@@ -54,12 +54,11 @@ namespace QuanLyDiemSV.GUI.User_Control
                 MessageBox.Show("Có lỗi khi thêm khoa");
             }    
         }
-        #endregion
 
         private void btnSuaKhoa_Click(object sender, EventArgs e)
-        {
-            string makhoa = txbMaKhoa.Text;
+        {          
             string tenkhoa = txbTenKhoa.Text;
+            string makhoa = txbMaKhoa.Text;
             if (KhoaDAO.Instance.UpdateKhoa(tenkhoa, makhoa))
             {
                 MessageBox.Show("Sửa khoa thành công");
@@ -84,5 +83,6 @@ namespace QuanLyDiemSV.GUI.User_Control
                 MessageBox.Show("Có lỗi khi xóa khoa");
             }
         }
+        #endregion
     }
 }

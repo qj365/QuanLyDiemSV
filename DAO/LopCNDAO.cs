@@ -32,9 +32,52 @@ namespace QuanLyDiemSV.DAO
             }
             return list;
         }
+
+        //Tim kiem
+        public List<LopCN> SearchLopCNByTenLopCN(string tenlopcn)
+        {
+            List<LopCN> list = new List<LopCN>();
+            string query = string.Format("select * from LOPCN where [dbo].[GetUnsignString](TENLOPCN) like N'%'+[dbo].[GetUnsignString](N'{0}')+'%' ", tenlopcn);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                LopCN lopcn = new LopCN(item);
+                list.Add(lopcn);
+            }
+            return list;
+        }
+
         public void DeleteLopCNByMaKhoa(string makhoa)
         {
             DataProvider.Instance.ExecuteQuery("delete from dbo.LopCN where MAKHOA = " + makhoa);
+        }
+
+        public bool InsertLopCN(string malopcn, string tenlopcn, int siso, string makhoa, string magv)
+        {
+            string query = string.Format("insert into LOPCN(MALOPCN, TENLOPCN, SISO, MAKHOA, MAGV) " +
+                "values (N'{0}',N'{1}',{2},N'{3}',N'{4}')", malopcn, tenlopcn, siso, makhoa, magv);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool UpdateLopCN(string tenlopcn, int siso, string makhoa, string magv, string malopcn)
+        {
+            string query = string.Format("update LOPCN set TENLOPCN=N'{0}',SISO = {1}, MAKHOA=N'{2}',MAGV=N'{3}' " +
+                "where MALOPCN=N'{4}' ", tenlopcn, siso, makhoa, magv, malopcn);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteLopCN(string malopcn)
+        {
+            SinhVienDAO.Instance.DeleteSinhVienByMaLopCN(malopcn);
+            string query = string.Format(" delete from dbo.LOPCN where MALOPCN = N'{0}' ", malopcn);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
         }
     }
 }
