@@ -42,31 +42,45 @@ namespace QuanLyDiemSV.GUI.User_Control
         #region Event
         private void btnThemKhoa_Click(object sender, EventArgs e)
         {
-            string makhoa = txbMaKhoa.Text;
-            string tenkhoa = txbTenKhoa.Text;
-            if (KhoaDAO.Instance.InsertKhoa(makhoa, tenkhoa))
+            try
             {
-                MessageBox.Show("Thêm khoa thành công");
-                LoadListKhoa();
+                string makhoa = txbMaKhoa.Text;
+                string tenkhoa = txbTenKhoa.Text;
+                if (KhoaDAO.Instance.InsertKhoa(makhoa, tenkhoa))
+                {
+                    MessageBox.Show("Thêm khoa thành công");
+                    LoadListKhoa();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm khoa");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm khoa");
-            }    
+
+            }
         }
 
         private void btnSuaKhoa_Click(object sender, EventArgs e)
-        {          
-            string tenkhoa = txbTenKhoa.Text;
-            string makhoa = txbMaKhoa.Text;
-            if (KhoaDAO.Instance.UpdateKhoa(tenkhoa, makhoa))
+        {
+            try
             {
-                MessageBox.Show("Sửa khoa thành công");
-                LoadListKhoa();
+                string tenkhoa = txbTenKhoa.Text;
+                string makhoa = txbMaKhoa.Text;
+                if (KhoaDAO.Instance.UpdateKhoa(tenkhoa, makhoa))
+                {
+                    MessageBox.Show("Sửa khoa thành công");
+                    LoadListKhoa();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi sửa khoa");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi sửa khoa");
+
             }
         }
 

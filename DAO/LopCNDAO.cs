@@ -34,10 +34,27 @@ namespace QuanLyDiemSV.DAO
         }
 
         //Tim kiem
-        public List<LopCN> SearchLopCNByTenLopCN(string tenlopcn)
+        public List<LopCN> SearchLopCNByTenLopCN(string tenlopcn, string makhoa)
         {
             List<LopCN> list = new List<LopCN>();
-            string query = string.Format("select * from LOPCN where [dbo].[GetUnsignString](TENLOPCN) like N'%'+[dbo].[GetUnsignString](N'{0}')+'%' ", tenlopcn);
+            string query = string.Format("select * from LOPCN where [dbo].[GetUnsignString](TENLOPCN) like N'%'" +
+                "+[dbo].[GetUnsignString](N'{0}')+'%'and[dbo].[GetUnsignString](MAKHOA) " +
+                "like N'%' +[dbo].[GetUnsignString](N'{1}') + '%'", tenlopcn, makhoa);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                LopCN lopcn = new LopCN(item);
+                list.Add(lopcn);
+            }
+            return list;
+        }
+
+        public List<LopCN> SearchLopCNByTenKhoa(string makhoa)
+        {
+            List<LopCN> list = new List<LopCN>();
+            string query = string.Format("select * from LOPCN where [dbo].[GetUnsignString](MAKHOA) " +
+                "like N'%'+[dbo].[GetUnsignString](N'{0}')+'%' ", makhoa);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

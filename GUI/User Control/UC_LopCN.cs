@@ -27,6 +27,7 @@ namespace QuanLyDiemSV.GUI.User_Control
             dtgvLopCN.DataSource = lopcnList;
             LoadListLopCN();
             LoadMaKhoaIntoComboBox(cbEditKhoa);
+            LoadMaKhoaIntoComboBox(cbFindKhoa);
             AddLopCNBinding();
         }
         void LoadMaKhoaIntoComboBox(ComboBox cb)
@@ -82,17 +83,24 @@ namespace QuanLyDiemSV.GUI.User_Control
         {
             string malopcn = txbEditMaLopCN.Text;
             string tenlopcn = txbTenLopCN.Text;
-            string magv = txbMaGV.Text;
             int siso = Int32.Parse(txbSiSo.Text);
             string makhoa = (cbEditKhoa.SelectedItem as Khoa).MaKhoa;
-            if (LopCNDAO.Instance.InsertLopCN(malopcn, tenlopcn, siso, makhoa, magv))
+            string magv = txbMaGV.Text;
+            try
             {
-                MessageBox.Show("Thêm lớp chuyên ngành thành công");
-                LoadListLopCN();
+                if (LopCNDAO.Instance.InsertLopCN(malopcn, tenlopcn, siso, makhoa, magv))
+                {
+                    MessageBox.Show("Thêm lớp chuyên ngành thành công");
+                    LoadListLopCN();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm lớp chuyên ngành");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi thêm lớp chuyên ngành");
+
             }
         }
 
@@ -100,47 +108,81 @@ namespace QuanLyDiemSV.GUI.User_Control
         {
             string malopcn = txbEditMaLopCN.Text;
             string tenlopcn = txbTenLopCN.Text;
-            string magv = txbMaGV.Text;
             int siso = Int32.Parse(txbSiSo.Text);
             string makhoa = (cbEditKhoa.SelectedItem as Khoa).MaKhoa;
-            if (LopCNDAO.Instance.UpdateLopCN(tenlopcn, siso, makhoa, magv, malopcn))
+            string magv = txbMaGV.Text;
+            try
             {
-                MessageBox.Show("Sửa lớp chuyên ngành thành công");
-                LoadListLopCN();
+                if (LopCNDAO.Instance.UpdateLopCN(tenlopcn, siso, makhoa, magv, malopcn))
+                {
+                    MessageBox.Show("Sửa lớp chuyên ngành thành công");
+                    LoadListLopCN();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi sửa lớp chuyên ngành");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi sửa lớp chuyên ngành");
+
             }
         }
 
         private void btnDeleteLopCN_Click(object sender, EventArgs e)
         {
             string malopcn = txbEditMaLopCN.Text;
-            if (LopCNDAO.Instance.DeleteLopCN(malopcn))
+            try
             {
-                MessageBox.Show("Xóa lớp chuyên ngành thành công");
-                LoadListLopCN();
+                if (LopCNDAO.Instance.DeleteLopCN(malopcn))
+                {
+                    MessageBox.Show("Xóa lớp chuyên ngành thành công");
+                    LoadListLopCN();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi xóa lớp chuyên ngành");
+                }
             }
-            else
+            catch
             {
-                MessageBox.Show("Có lỗi khi xóa lớp chuyên ngành");
+
             }
         }
 
         //Tim kiem
-        List<LopCN> SearchLopCNByTenLopCN(string tenlopcn)
+        List<LopCN> SearchLopCNByTenLopCN(string tenlopcn, string makhoa)
         {
-            List<LopCN> listLopCN = LopCNDAO.Instance.SearchLopCNByTenLopCN(tenlopcn);
+            List<LopCN> listLopCN = LopCNDAO.Instance.SearchLopCNByTenLopCN(tenlopcn, makhoa);
             return listLopCN;
         }
-        
-        private void btnFindTenLopCN_Click(object sender, EventArgs e)
+
+        List<LopCN> SearchLopCNByTenKhoa(string makhoa)
         {
-            lopcnList.DataSource = SearchLopCNByTenLopCN(txbFindLopCN.Text);
+            List<LopCN> listLopCN = LopCNDAO.Instance.SearchLopCNByTenKhoa(makhoa);
+            return listLopCN;
         }
 
-
+        private void btnFindTenLopCN_Click(object sender, EventArgs e)
+        {
+            
+            if(txbFindLopCN.Text=="")
+            {
+                lopcnList.DataSource = SearchLopCNByTenKhoa((cbFindKhoa.SelectedItem as Khoa).MaKhoa);
+                
+            }
+            else 
+            {
+                lopcnList.DataSource = SearchLopCNByTenLopCN(txbFindLopCN.Text, (cbFindKhoa.SelectedItem as Khoa).MaKhoa);
+            }
+            
+        }
+        
+        private void btnXem_Click(object sender, EventArgs e)
+        {
+            LoadListLopCN();
+        }
+        
         #endregion
     }
 }
