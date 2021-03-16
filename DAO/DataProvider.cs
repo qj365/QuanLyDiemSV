@@ -19,7 +19,7 @@ namespace QuanLyDiemSV.DAO
         }
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=DESKTOP-O4C1DSP;Initial Catalog=QUANLYDIEMSV;Integrated Security=True";
+        private string connectionSTR = "Data Source=ADMIN;Initial Catalog=QUANLYDIEMSV;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

@@ -36,5 +36,60 @@ namespace QuanLyDiemSV.DAO
         {
             DataProvider.Instance.ExecuteQuery("delete from dbo.GIAOVIEN where MAKHOA = " + makhoa);
         }
+        public bool InsertGV(string magv, string tengv, string gioitinh, string ngaysinh, string diachi, string sdt, string matkhau, string makhoa)
+        {
+            string query = string.Format("insert dbo.GIAOVIEN ( MAGV, TENGV, GIOITINH, NGAYSINH, DIACHI, SDT, MATKHAU, MAKHOA ) values" +
+                " ( N'{0}', N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}' )", magv, tengv, gioitinh, ngaysinh, diachi, sdt, matkhau, makhoa);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+        public bool UpdateGiaoVien(string tengv, string gioitinh, string ngaysinh, string diachi, string sdt, string matkhau, string makhoa, string magv)
+        {
+            string query = string.Format("update dbo.GIAOVIEN set  TENGV= N'{0}',GIOITINH=N'{1}',NGAYSINH=N'{2}',DIACHI=N'{3}',SDT=N'{4}',MATKHAU=N'{5}',MAKHOA=N'{6}' where MAGV = N'{7}' ",
+                 tengv, gioitinh, ngaysinh, diachi, sdt, matkhau, makhoa, magv);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteGiaoVien(string magv)
+        {
+
+            string query = string.Format(" delete from dbo.GIAOVIEN where MAGV = N'{0}' ", magv);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+        public List<GiaoVien> SearchGvByTenGv(string tengv, string makhoa)
+        {
+            List<GiaoVien> list = new List<GiaoVien>();
+            string query = string.Format("select * from GIAOVIEN where [dbo].[GetUnsignString](TENGV) like N'%'" +
+                "+[dbo].[GetUnsignString](N'{0}')+'%'and[dbo].[GetUnsignString](MAKHOA) " +
+                "like N'%' +[dbo].[GetUnsignString](N'{1}') + '%'", tengv, makhoa);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                GiaoVien giaovien = new GiaoVien(item);
+                list.Add(giaovien);
+            }
+            return list;
+        }
+
+        public List<GiaoVien> SearchGvByTenKhoa(string makhoa)
+        {
+            List<GiaoVien> list = new List<GiaoVien>();
+            string query = string.Format("select * from GIAOVIEN where [dbo].[GetUnsignString](MAKHOA) " +
+                "like N'%'+[dbo].[GetUnsignString](N'{0}')+'%' ", makhoa);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                GiaoVien giaovien = new GiaoVien(item);
+                list.Add(giaovien);
+            }
+            return list;
+        }
     }
 }

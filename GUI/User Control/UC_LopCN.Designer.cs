@@ -31,6 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_LopCN));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
@@ -63,16 +67,13 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_LopCN));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dtgvLopCN = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnXem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txbMaGV = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbEditKhoa = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -84,12 +85,11 @@
             this.btnInsertLopCN = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbFindKhoa = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnFindTenLopCN = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txbFindLopCN = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbFindKhoa = new Bunifu.UI.WinForms.BunifuDropdown();
-            this.btnXem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvLopCN)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,7 +102,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label2.Location = new System.Drawing.Point(21, 138);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 27);
+            this.label2.Size = new System.Drawing.Size(69, 22);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tên lớp";
             // 
@@ -113,7 +113,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label1.Location = new System.Drawing.Point(21, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 27);
+            this.label1.Size = new System.Drawing.Size(65, 22);
             this.label1.TabIndex = 13;
             this.label1.Text = "Mã lớp";
             // 
@@ -124,7 +124,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label3.Location = new System.Drawing.Point(21, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 27);
+            this.label3.Size = new System.Drawing.Size(46, 22);
             this.label3.TabIndex = 13;
             this.label3.Text = "Sĩ số";
             // 
@@ -135,7 +135,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label4.Location = new System.Drawing.Point(21, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 27);
+            this.label4.Size = new System.Drawing.Size(52, 22);
             this.label4.TabIndex = 12;
             this.label4.Text = "Khoa";
             // 
@@ -222,6 +222,70 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chỉnh sửa";
             // 
+            // btnXem
+            // 
+            this.btnXem.AllowToggling = false;
+            this.btnXem.AnimationSpeed = 200;
+            this.btnXem.AutoGenerateColors = true;
+            this.btnXem.BackColor = System.Drawing.Color.Transparent;
+            this.btnXem.BackColor1 = System.Drawing.Color.MediumTurquoise;
+            this.btnXem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXem.BackgroundImage")));
+            this.btnXem.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXem.ButtonText = "Xem";
+            this.btnXem.ButtonTextMarginLeft = 0;
+            this.btnXem.ColorContrastOnClick = 45;
+            this.btnXem.ColorContrastOnHover = 45;
+            this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnXem.CustomizableEdges = borderEdges1;
+            this.btnXem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnXem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnXem.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnXem.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnXem.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXem.IconMarginLeft = 11;
+            this.btnXem.IconPadding = 10;
+            this.btnXem.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXem.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(175)))), ((int)(((byte)(85)))));
+            this.btnXem.IdleBorderRadius = 5;
+            this.btnXem.IdleBorderThickness = 1;
+            this.btnXem.IdleFillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnXem.IdleIconLeftImage = null;
+            this.btnXem.IdleIconRightImage = null;
+            this.btnXem.IndicateFocus = false;
+            this.btnXem.Location = new System.Drawing.Point(304, 19);
+            this.btnXem.Name = "btnXem";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(211)))), ((int)(((byte)(161)))));
+            stateProperties1.BorderRadius = 5;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btnXem.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
+            stateProperties2.BorderRadius = 5;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(114)))), ((int)(((byte)(112)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btnXem.OnPressedState = stateProperties2;
+            this.btnXem.Size = new System.Drawing.Size(118, 45);
+            this.btnXem.TabIndex = 20;
+            this.btnXem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXem.TextMarginLeft = 0;
+            this.btnXem.UseDefaultRadiusAndThickness = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            // 
             // txbMaGV
             // 
             this.txbMaGV.AcceptsReturn = false;
@@ -284,7 +348,7 @@
             this.txbMaGV.SelectionLength = 0;
             this.txbMaGV.SelectionStart = 0;
             this.txbMaGV.ShortcutsEnabled = true;
-            this.txbMaGV.Size = new System.Drawing.Size(263, 37);
+            this.txbMaGV.Size = new System.Drawing.Size(263, 35);
             this.txbMaGV.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbMaGV.TabIndex = 19;
             this.txbMaGV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -302,7 +366,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label7.Location = new System.Drawing.Point(21, 293);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 27);
+            this.label7.Size = new System.Drawing.Size(61, 22);
             this.label7.TabIndex = 18;
             this.label7.Text = "Mã GV";
             // 
@@ -399,7 +463,7 @@
             this.txbEditMaLopCN.SelectionLength = 0;
             this.txbEditMaLopCN.SelectionStart = 0;
             this.txbEditMaLopCN.ShortcutsEnabled = true;
-            this.txbEditMaLopCN.Size = new System.Drawing.Size(263, 37);
+            this.txbEditMaLopCN.Size = new System.Drawing.Size(263, 35);
             this.txbEditMaLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbEditMaLopCN.TabIndex = 11;
             this.txbEditMaLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -473,7 +537,7 @@
             this.txbTenLopCN.SelectionLength = 0;
             this.txbTenLopCN.SelectionStart = 0;
             this.txbTenLopCN.ShortcutsEnabled = true;
-            this.txbTenLopCN.Size = new System.Drawing.Size(263, 37);
+            this.txbTenLopCN.Size = new System.Drawing.Size(263, 35);
             this.txbTenLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbTenLopCN.TabIndex = 10;
             this.txbTenLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -610,7 +674,7 @@
             this.txbSiSo.SelectionLength = 0;
             this.txbSiSo.SelectionStart = 0;
             this.txbSiSo.ShortcutsEnabled = true;
-            this.txbSiSo.Size = new System.Drawing.Size(263, 37);
+            this.txbSiSo.Size = new System.Drawing.Size(263, 35);
             this.txbSiSo.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbSiSo.TabIndex = 11;
             this.txbSiSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -765,6 +829,60 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm";
             // 
+            // cbFindKhoa
+            // 
+            this.cbFindKhoa.BackColor = System.Drawing.Color.White;
+            this.cbFindKhoa.BorderRadius = 0;
+            this.cbFindKhoa.Color = System.Drawing.Color.SeaGreen;
+            this.cbFindKhoa.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.cbFindKhoa.DisabledColor = System.Drawing.Color.Gray;
+            this.cbFindKhoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbFindKhoa.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.cbFindKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFindKhoa.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.cbFindKhoa.FillDropDown = false;
+            this.cbFindKhoa.FillIndicator = false;
+            this.cbFindKhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbFindKhoa.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFindKhoa.ForeColor = System.Drawing.Color.Black;
+            this.cbFindKhoa.FormattingEnabled = true;
+            this.cbFindKhoa.Icon = null;
+            this.cbFindKhoa.IndicatorColor = System.Drawing.Color.SeaGreen;
+            this.cbFindKhoa.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.cbFindKhoa.ItemBackColor = System.Drawing.Color.White;
+            this.cbFindKhoa.ItemBorderColor = System.Drawing.Color.White;
+            this.cbFindKhoa.ItemForeColor = System.Drawing.Color.Black;
+            this.cbFindKhoa.ItemHeight = 26;
+            this.cbFindKhoa.ItemHighLightColor = System.Drawing.Color.MediumSeaGreen;
+            this.cbFindKhoa.Location = new System.Drawing.Point(519, 45);
+            this.cbFindKhoa.Name = "cbFindKhoa";
+            this.cbFindKhoa.Size = new System.Drawing.Size(263, 32);
+            this.cbFindKhoa.TabIndex = 21;
+            this.cbFindKhoa.Text = null;
+
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
+            this.label6.Location = new System.Drawing.Point(409, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 22);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Tên Khoa";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
+            this.label5.Location = new System.Drawing.Point(6, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 22);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Tên Lớp";
+            // 
             // btnFindTenLopCN
             // 
             this.btnFindTenLopCN.AllowToggling = false;
@@ -891,7 +1009,7 @@
             this.txbFindLopCN.SelectionLength = 0;
             this.txbFindLopCN.SelectionStart = 0;
             this.txbFindLopCN.ShortcutsEnabled = true;
-            this.txbFindLopCN.Size = new System.Drawing.Size(263, 37);
+            this.txbFindLopCN.Size = new System.Drawing.Size(263, 35);
             this.txbFindLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbFindLopCN.TabIndex = 11;
             this.txbFindLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -901,123 +1019,6 @@
             this.txbFindLopCN.TextPlaceholder = "";
             this.txbFindLopCN.UseSystemPasswordChar = false;
             this.txbFindLopCN.WordWrap = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
-            this.label5.Location = new System.Drawing.Point(6, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 27);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Tên Lớp";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
-            this.label6.Location = new System.Drawing.Point(409, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 27);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Tên Khoa";
-            // 
-            // cbFindKhoa
-            // 
-            this.cbFindKhoa.BackColor = System.Drawing.Color.White;
-            this.cbFindKhoa.BorderRadius = 0;
-            this.cbFindKhoa.Color = System.Drawing.Color.SeaGreen;
-            this.cbFindKhoa.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.cbFindKhoa.DisabledColor = System.Drawing.Color.Gray;
-            this.cbFindKhoa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbFindKhoa.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.cbFindKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFindKhoa.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.cbFindKhoa.FillDropDown = false;
-            this.cbFindKhoa.FillIndicator = false;
-            this.cbFindKhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbFindKhoa.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbFindKhoa.ForeColor = System.Drawing.Color.Black;
-            this.cbFindKhoa.FormattingEnabled = true;
-            this.cbFindKhoa.Icon = null;
-            this.cbFindKhoa.IndicatorColor = System.Drawing.Color.SeaGreen;
-            this.cbFindKhoa.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.cbFindKhoa.ItemBackColor = System.Drawing.Color.White;
-            this.cbFindKhoa.ItemBorderColor = System.Drawing.Color.White;
-            this.cbFindKhoa.ItemForeColor = System.Drawing.Color.Black;
-            this.cbFindKhoa.ItemHeight = 26;
-            this.cbFindKhoa.ItemHighLightColor = System.Drawing.Color.MediumSeaGreen;
-            this.cbFindKhoa.Location = new System.Drawing.Point(519, 45);
-            this.cbFindKhoa.Name = "cbFindKhoa";
-            this.cbFindKhoa.Size = new System.Drawing.Size(263, 32);
-            this.cbFindKhoa.TabIndex = 21;
-            this.cbFindKhoa.Text = null;
-            // 
-            // btnXem
-            // 
-            this.btnXem.AllowToggling = false;
-            this.btnXem.AnimationSpeed = 200;
-            this.btnXem.AutoGenerateColors = true;
-            this.btnXem.BackColor = System.Drawing.Color.Transparent;
-            this.btnXem.BackColor1 = System.Drawing.Color.MediumTurquoise;
-            this.btnXem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXem.BackgroundImage")));
-            this.btnXem.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnXem.ButtonText = "Xem";
-            this.btnXem.ButtonTextMarginLeft = 0;
-            this.btnXem.ColorContrastOnClick = 45;
-            this.btnXem.ColorContrastOnHover = 45;
-            this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnXem.CustomizableEdges = borderEdges1;
-            this.btnXem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnXem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnXem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnXem.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnXem.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnXem.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXem.ForeColor = System.Drawing.Color.White;
-            this.btnXem.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXem.IconMarginLeft = 11;
-            this.btnXem.IconPadding = 10;
-            this.btnXem.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXem.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(175)))), ((int)(((byte)(85)))));
-            this.btnXem.IdleBorderRadius = 5;
-            this.btnXem.IdleBorderThickness = 1;
-            this.btnXem.IdleFillColor = System.Drawing.Color.MediumTurquoise;
-            this.btnXem.IdleIconLeftImage = null;
-            this.btnXem.IdleIconRightImage = null;
-            this.btnXem.IndicateFocus = false;
-            this.btnXem.Location = new System.Drawing.Point(304, 19);
-            this.btnXem.Name = "btnXem";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(211)))), ((int)(((byte)(161)))));
-            stateProperties1.BorderRadius = 5;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(229)))), ((int)(((byte)(226)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.btnXem.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
-            stateProperties2.BorderRadius = 5;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(114)))), ((int)(((byte)(112)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.btnXem.OnPressedState = stateProperties2;
-            this.btnXem.Size = new System.Drawing.Size(118, 45);
-            this.btnXem.TabIndex = 20;
-            this.btnXem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnXem.TextMarginLeft = 0;
-            this.btnXem.UseDefaultRadiusAndThickness = true;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // UC_LopCN
             // 

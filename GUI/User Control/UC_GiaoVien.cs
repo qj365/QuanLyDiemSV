@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using QuanLyDiemSV.DAO;
+using QuanLyDiemSV.DTO;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
@@ -20,24 +21,69 @@ namespace QuanLyDiemSV.GUI.User_Control
         {
             InitializeComponent();
             Load();
+           
         }
-        #region Method
         void Load()
         {
+
             dtgvGiaoVien.DataSource = giaovienList;
             LoadListGiaoVien();
-            AddKhoaBinding();
+            LoadMaKhoaIntoComboBox(cbKhoa);
+
         }
+        void LoadMaKhoaIntoComboBox(ComboBox cb)
+        {
+            cb.DataSource = KhoaDAO.Instance.GetListKhoa();
+            cb.DisplayMember = "TenKhoa";
+        }
+        
+         
+
         void LoadListGiaoVien()
         {
             giaovienList.DataSource = GiaoVienDAO.Instance.GetListGiaoVien();
         }
-        void AddKhoaBinding()
-        {
-            //txbMaKhoa.DataBindings.Add(new Binding("Text", dtgvKhoa.DataSource, "MaKhoa", true, DataSourceUpdateMode.Never));
-            //txbTenKhoa.DataBindings.Add(new Binding("Text", dtgvKhoa.DataSource, "TenKhoa", true, DataSourceUpdateMode.Never));
-        }
-        #endregion
 
+        
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            frGiaoVien gv = new frGiaoVien();
+            gv.Show();
+
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            LoadListGiaoVien();
+        }
+        List<GiaoVien> SearchGvByTenGv(string tengv, string makhoa)
+        {
+            List<GiaoVien> listGiaoVien = GiaoVienDAO.Instance.SearchGvByTenGv(tengv, makhoa);
+            return listGiaoVien;
+        }
+
+        List<GiaoVien> SearchGvByTenKhoa(string makhoa)
+        {
+            List<GiaoVien> listGiaoVien = GiaoVienDAO.Instance.SearchGvByTenKhoa(makhoa);
+            return listGiaoVien;
+        }
+
+
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+
+            if (txbTengv.Text == "")
+            {
+                giaovienList.DataSource = SearchGvByTenKhoa((cbKhoa.SelectedItem as Khoa).MaKhoa);
+
+            }
+            else
+            {
+                giaovienList.DataSource = SearchGvByTenGv(txbTengv.Text, (cbKhoa.SelectedItem as Khoa).MaKhoa);
+            }
+        }
     }
 }

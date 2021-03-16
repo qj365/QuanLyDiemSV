@@ -182,7 +182,9 @@ namespace QuanLyDiemSV.GUI.User_Control
         {
             LoadListLopCN();
         }
-        
+
         #endregion
+
+
     }
 }
