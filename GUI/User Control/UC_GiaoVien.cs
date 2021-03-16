@@ -14,18 +14,30 @@ namespace QuanLyDiemSV.GUI.User_Control
 {
     public partial class UC_GiaoVien : UserControl
     {
+        BindingSource giaovienList = new BindingSource();
+
         public UC_GiaoVien()
         {
             InitializeComponent();
+            Load();
         }
-
-        private void btnThem_Click(object sender, EventArgs e)
+        #region Method
+        void Load()
         {
-            using (frGiaoVien frgv = new frGiaoVien())
-            {
-                frgv.ShowDialog();
-            }
+            dtgvGiaoVien.DataSource = giaovienList;
+            LoadListGiaoVien();
+            AddKhoaBinding();
         }
-      
+        void LoadListGiaoVien()
+        {
+            giaovienList.DataSource = GiaoVienDAO.Instance.GetListGiaoVien();
+        }
+        void AddKhoaBinding()
+        {
+            //txbMaKhoa.DataBindings.Add(new Binding("Text", dtgvKhoa.DataSource, "MaKhoa", true, DataSourceUpdateMode.Never));
+            //txbTenKhoa.DataBindings.Add(new Binding("Text", dtgvKhoa.DataSource, "TenKhoa", true, DataSourceUpdateMode.Never));
+        }
+        #endregion
+
     }
 }
