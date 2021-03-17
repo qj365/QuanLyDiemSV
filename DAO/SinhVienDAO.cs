@@ -65,18 +65,18 @@ namespace QuanLyDiemSV.DAO
         {
             DataProvider.Instance.ExecuteQuery("delete from dbo.SINHVIEN where MALOPCN = " + malopcn);
         }
-        public bool InsertSV(string masv, string tensv, string gioitinh, string ngaysinh, string quequan, string sdt, string gpa, string malopcn)
+        public bool InsertSV(string masv, string tensv, string gioitinh, string ngaysinh, string quequan, string sdt, string malopcn, string gpa)
         {
-            string query = string.Format("insert dbo.SINHVIEN ( MASV, TENSV, GIOITINH, NGAYSINH, QUEQUAN, SDT, GPA, MALOPCN ) values" +
-                " ( N'{0}', N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}' )", masv, tensv, gioitinh, ngaysinh, quequan, sdt, gpa, malopcn);
+            string query = string.Format("insert dbo.SINHVIEN ( MASV, TENSV, GIOITINH, NGAYSINH, QUEQUAN, SDT, MALOPCN, GPA ) values" +
+                " ( N'{0}', N'{1}',N'{2}',N'{3}',N'{4}',N'{5}',N'{6}',N'{7}' )", masv, tensv, gioitinh, ngaysinh, quequan, sdt, malopcn, gpa);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdateSinhVien(string tensv, string gioitinh, string ngaysinh, string quequan, string sdt, string gpa, string malopcn, string masv)
+        public bool UpdateSinhVien(string tensv, string gioitinh, string ngaysinh, string quequan, string sdt, string malopcn, string gpa, string masv)
         {
             string query = string.Format(
-            "update dbo.SINHVIEN set  TENSV= N'{0}', GIOITINH=N'{1}', NGAYSINH=N'{2}', QUEQUAN=N'{3}', SDT=N'{4}', GPA=N'{5}', MALOPCN=N'{6}' where MASV = N'{7}' ",
-            tensv, gioitinh, ngaysinh, quequan, sdt, gpa, malopcn, masv);
+            "update dbo.SINHVIEN set  TENSV= N'{0}', GIOITINH=N'{1}', NGAYSINH=N'{2}', QUEQUAN=N'{3}', SDT=N'{4}', MALOPCN=N'{5}', GPA=N'{6}' where MASV = N'{7}' ",
+            tensv, gioitinh, ngaysinh, quequan, sdt, malopcn, gpa, masv);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
@@ -84,9 +84,6 @@ namespace QuanLyDiemSV.DAO
 
         public bool DeleteSinhVien(string masv)
         {
-            LopCNDAO.Instance.DeleteLopCNByMaKhoa(masv);
-
-
             string query = string.Format(" delete from dbo.SINHVIEN where MASV = N'{0}' ", masv);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

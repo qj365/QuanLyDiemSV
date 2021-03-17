@@ -55,7 +55,7 @@ namespace QuanLyDiemSV.DAO
 
         public bool DeleteGiaoVien(string magv)
         {
-
+            LopCNDAO.Instance.DeleteLopCNByMaGV(magv);
             string query = string.Format(" delete from dbo.GIAOVIEN where MAGV = N'{0}' ", magv);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

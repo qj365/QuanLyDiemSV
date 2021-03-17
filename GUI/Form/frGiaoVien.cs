@@ -23,10 +23,7 @@ namespace QuanLyDiemSV
         }
         void Load()
         {
-
-
-            LoadMaKhoaIntoComboBox(cbKhoa);
-            
+            LoadMaKhoaIntoComboBox(cbKhoa);           
         }
         
         void LoadMaKhoaIntoComboBox(ComboBox cb)
@@ -35,15 +32,10 @@ namespace QuanLyDiemSV
             cb.DisplayMember = "TenKhoa";
         }
 
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
-
-
-
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
@@ -57,8 +49,6 @@ namespace QuanLyDiemSV
             string sdt = txbPhone.Text;
             string matkhau = txbPass.Text;
             string makhoa = (cbKhoa.SelectedItem as Khoa).MaKhoa;
-
-
 
             if (GiaoVienDAO.Instance.InsertGV(magv, tengv, gioitinh, ngaysinh, diachi, sdt, matkhau, makhoa))
             {
@@ -90,8 +80,6 @@ namespace QuanLyDiemSV
             string matkhau = txbPass.Text;
             string makhoa = (cbKhoa.SelectedItem as Khoa).MaKhoa;
 
-
-
             if (GiaoVienDAO.Instance.UpdateGiaoVien( tengv, gioitinh, ngaysinh, diachi, sdt, matkhau, makhoa,magv))
             {
                 MessageBox.Show("Sửa thành công!");
@@ -112,6 +100,7 @@ namespace QuanLyDiemSV
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
+
             try
             {
             string magv = txbMaGv.Text;
@@ -122,8 +111,6 @@ namespace QuanLyDiemSV
             string sdt = txbPhone.Text;
             string matkhau = txbPass.Text;
             string makhoa = (cbKhoa.SelectedItem as Khoa).MaKhoa;
-
-
 
             if (GiaoVienDAO.Instance.DeleteGiaoVien(magv))
             {

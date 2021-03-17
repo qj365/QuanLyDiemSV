@@ -36,12 +36,12 @@ namespace QuanLyDiemSV
                 string ngaysinh = dpNgaySinh.Value.ToString("yyyy/MM/dd");
                 string quequan = txbQueQuan.Text;
                 string sdt = txbPhone.Text;
-                string malop = txbMaLop.Text;
+                string malopcn = txbMaLop.Text;
                 string gpa = txbGpa.Text;
 
 
 
-                if (SinhVienDAO.Instance.InsertSV(masv, tensv, gioitinh, ngaysinh, quequan, sdt, malop, gpa))
+                if (SinhVienDAO.Instance.InsertSV(masv, tensv, gioitinh, ngaysinh, quequan, sdt, malopcn, gpa))
                 {
                     MessageBox.Show("Thêm Sinh viên thành công!");
 
@@ -67,12 +67,12 @@ namespace QuanLyDiemSV
                 string ngaysinh = dpNgaySinh.Value.ToString("yyyy/MM/dd");
                 string quequan = txbQueQuan.Text;
                 string sdt = txbPhone.Text;
-                string malop = txbMaLop.Text;
+                string malopcn = txbMaLop.Text;
                 string gpa = txbGpa.Text;
                 string masv = txbMaSv.Text;
 
 
-                if (SinhVienDAO.Instance.UpdateSinhVien(tensv, gioitinh, ngaysinh, quequan, sdt, malop, gpa, masv))
+                if (SinhVienDAO.Instance.UpdateSinhVien(tensv, gioitinh, ngaysinh, quequan, sdt, malopcn, gpa, masv))
                 {
                     MessageBox.Show("Sửa sinh viên thành công!");
 

@@ -69,6 +69,10 @@ namespace QuanLyDiemSV.DAO
         {
             DataProvider.Instance.ExecuteQuery("delete from dbo.LopCN where MAKHOA = " + makhoa);
         }
+        public void DeleteLopCNByMaGV(string magv)
+        {
+            DataProvider.Instance.ExecuteQuery("delete from dbo.LopCN where MAGV = " + magv);
+        }
 
         public bool InsertLopCN(string malopcn, string tenlopcn, int siso, string makhoa, string magv)
         {
