@@ -73,7 +73,7 @@ namespace QuanLyDiemSV.DAO
 
         public bool DeleteLopHP(string malophp)
         {
-            //SinhVienDAO.Instance.DeleteSinhVienByMaLopCN(malopcn);
+            DiemSVDAO.Instance.DeleteDiemSVByMaLopHP(malophp);
             string query = string.Format(" delete from dbo.LOPHP where MALOPHP = N'{0}' ", malophp);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

@@ -22,7 +22,6 @@ namespace QuanLyDiemSV
         {
             this.Dispose();
         }
-        //code them sua xoa can xem lai bien
         private void buttonThem_Click(object sender, EventArgs e)
         {
             try
@@ -32,19 +31,15 @@ namespace QuanLyDiemSV
                 double diemcc = (double)Convert.ToDouble(txbDCC.Text);
                 double diemtx = (double)Convert.ToDouble(txbDTX.Text);
                 double diemthi = (double)Convert.ToDouble(txbDT.Text);
-                double diemtb = (double)Convert.ToDouble(txbDTB.Text);
 
-
-
-
-                if (DiemSVDAO.Instance.InsertDiemSV(masv, malophp, diemcc, diemtx, diemthi, diemtb))
+                if (DiemSVDAO.Instance.InsertDiemSV(masv, malophp, diemcc, diemtx, diemthi))
                 {
-                    MessageBox.Show("Thêm Sinh viên thành công!");
+                    MessageBox.Show("Thêm điểm sinh viên thành công!");
 
                 }
                 else
                 {
-                    MessageBox.Show("Có lỗi khi thêm sinh viên!");
+                    MessageBox.Show("Có lỗi khi thêm điểm sinh viên!");
                 }
             }
             catch
@@ -62,54 +57,41 @@ namespace QuanLyDiemSV
                 double diemcc = (double)Convert.ToDouble(txbDCC.Text);
                 double diemtx = (double)Convert.ToDouble(txbDTX.Text);
                 double diemthi = (double)Convert.ToDouble(txbDT.Text);
-                double diemtb = (double)Convert.ToDouble(txbDTB.Text);
 
-
-
-
-                if (DiemSVDAO.Instance.UpdateDiemSV(masv, malophp, diemcc, diemtx, diemthi, diemtb))
+                if (DiemSVDAO.Instance.UpdateDiemSV( diemcc, diemtx, diemthi, malophp, masv))
                 {
-                    MessageBox.Show("Thêm Sinh viên thành công!");
+                    MessageBox.Show("Sủa điểm sinh viên thành công!");
 
                 }
                 else
                 {
-                    MessageBox.Show("Có lỗi khi thêm sinh viên!");
+                    MessageBox.Show("Có lỗi khi sửa điểm sinh viên!");
                 }
             }
             catch
             {
-                MessageBox.Show("Sai hoặc trùng thông tin khi thêm!");
+                MessageBox.Show("Sai thông tin khi sửa!");
             }
         }
-        //tai sao lai xoa o cho nay nhi@@??????
         private void buttonXoa_Click(object sender, EventArgs e)
         {
             try
             {
                 string masv = txbMSV.Text;
-                string malophp = txbMLHP.Text;
-                double diemcc = (double)Convert.ToDouble(txbDCC.Text);
-                double diemtx = (double)Convert.ToDouble(txbDTX.Text);
-                double diemthi = (double)Convert.ToDouble(txbDT.Text);
-                double diemtb = (double)Convert.ToDouble(txbDTB.Text);
-
-
-
 
                 if (DiemSVDAO.Instance.DeleteDiemSV(masv))
                 {
-                    MessageBox.Show("Thêm Sinh viên thành công!");
+                    MessageBox.Show("Xóa điểm sinh viên thành công!");
 
                 }
                 else
                 {
-                    MessageBox.Show("Có lỗi khi thêm sinh viên!");
+                    MessageBox.Show("Có lỗi khi xóa điểm sinh viên!");
                 }
             }
             catch
             {
-                MessageBox.Show("Sai hoặc trùng thông tin khi thêm!");
+                MessageBox.Show("Sai thông tin khi xóa!");
             }
         }
 

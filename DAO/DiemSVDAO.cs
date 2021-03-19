@@ -29,22 +29,18 @@ namespace QuanLyDiemSV.DAO
             }
             return list;
         }
-        public void DeleteDiemSvByMaSV(string masv)
+        public bool InsertDiemSV(string masv, string malophp, double diemcc, double diemtx, double diemthi)
         {
-            DataProvider.Instance.ExecuteQuery("delete from dbo.BANGDIEMCT where MASV = " + masv);
-        }
-        public bool InsertDiemSV(string masv, string malophp, double diemcc, double diemtx, double diemthi, double diemtb)
-        {
-            string query = string.Format("insert dbo.BANGDIEMCT ( MASV, MALOPHP, DIEMCC, DIEMTX, DIEMTHI, DIEMTB ) values" +
-                " ( N'{0}', N'{1}',{2},{3},{4},{5})", masv, malophp, diemcc, diemtx, diemthi, diemtb);
+            string query = string.Format("insert dbo.BANGDIEMCT ( MASV, MALOPHP, DIEMCC, DIEMTX, DIEMTHI ) values" +
+                " ( N'{0}', N'{1}',{2},{3},{4})", masv, malophp, diemcc, diemtx, diemthi);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
         }
-        public bool UpdateDiemSV(string masv, string malophp, double diemcc, double diemtx, double diemthi, double diemtb)
+        public bool UpdateDiemSV( double diemcc, double diemtx, double diemthi, string malophp, string masv)
         {
-            string query = string.Format("update dbo.BANGDIEMCT set  DIEMCC={0},DIEMTX={1},DIEMTHI={2},DIEMTB = {3}" +
-                "where MASV=N'{4}', MALOPHP=N'{5}'", diemcc, diemtx, diemthi, diemtb, masv, malophp);
+            string query = string.Format("update dbo.BANGDIEMCT set  DIEMCC={0},DIEMTX={1},DIEMTHI={2}, MALOPHP=N'{3}'" +
+                "where MASV=N'{4}'", diemcc, diemtx, diemthi, malophp, masv);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
@@ -74,7 +70,7 @@ namespace QuanLyDiemSV.DAO
         public List<DiemSV> SearchDiemSVByMaLopHP(string malophp)
         {
             List<DiemSV> list = new List<DiemSV>();
-            string query = string.Format("select * from BANGDIEMCT where [dbo].[GetUnsignString](MALOHP) " +
+            string query = string.Format("select * from BANGDIEMCT where [dbo].[GetUnsignString](MALOPHP) " +
                 "like N'%'+[dbo].[GetUnsignString](N'{0}')+'%' ", malophp);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -85,7 +81,14 @@ namespace QuanLyDiemSV.DAO
             }
             return list;
         }
+        public void DeleteDiemSVByMaLopHP(string malophp)
+        {
+            DataProvider.Instance.ExecuteQuery("delete from dbo.BANGDIEMCT where MALOPHP = " + malophp);
+        }
 
-
+        public void DeleteDiemSvByMaSV(string masv)
+        {
+            DataProvider.Instance.ExecuteQuery("delete from dbo.BANGDIEMCT where MASV = " + masv);
+        }
     }
 }

@@ -102,7 +102,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label2.Location = new System.Drawing.Point(21, 138);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 22);
+            this.label2.Size = new System.Drawing.Size(87, 27);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tên lớp";
             // 
@@ -113,7 +113,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label1.Location = new System.Drawing.Point(21, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 22);
+            this.label1.Size = new System.Drawing.Size(81, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "Mã lớp";
             // 
@@ -124,7 +124,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label3.Location = new System.Drawing.Point(21, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 22);
+            this.label3.Size = new System.Drawing.Size(56, 27);
             this.label3.TabIndex = 13;
             this.label3.Text = "Sĩ số";
             // 
@@ -135,7 +135,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label4.Location = new System.Drawing.Point(21, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 22);
+            this.label4.Size = new System.Drawing.Size(62, 27);
             this.label4.TabIndex = 12;
             this.label4.Text = "Khoa";
             // 
@@ -348,7 +348,7 @@
             this.txbMaGV.SelectionLength = 0;
             this.txbMaGV.SelectionStart = 0;
             this.txbMaGV.ShortcutsEnabled = true;
-            this.txbMaGV.Size = new System.Drawing.Size(263, 35);
+            this.txbMaGV.Size = new System.Drawing.Size(263, 37);
             this.txbMaGV.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbMaGV.TabIndex = 19;
             this.txbMaGV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -366,7 +366,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label7.Location = new System.Drawing.Point(21, 293);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 22);
+            this.label7.Size = new System.Drawing.Size(75, 27);
             this.label7.TabIndex = 18;
             this.label7.Text = "Mã GV";
             // 
@@ -463,7 +463,7 @@
             this.txbEditMaLopCN.SelectionLength = 0;
             this.txbEditMaLopCN.SelectionStart = 0;
             this.txbEditMaLopCN.ShortcutsEnabled = true;
-            this.txbEditMaLopCN.Size = new System.Drawing.Size(263, 35);
+            this.txbEditMaLopCN.Size = new System.Drawing.Size(263, 37);
             this.txbEditMaLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbEditMaLopCN.TabIndex = 11;
             this.txbEditMaLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -537,7 +537,7 @@
             this.txbTenLopCN.SelectionLength = 0;
             this.txbTenLopCN.SelectionStart = 0;
             this.txbTenLopCN.ShortcutsEnabled = true;
-            this.txbTenLopCN.Size = new System.Drawing.Size(263, 35);
+            this.txbTenLopCN.Size = new System.Drawing.Size(263, 37);
             this.txbTenLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbTenLopCN.TabIndex = 10;
             this.txbTenLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -674,7 +674,7 @@
             this.txbSiSo.SelectionLength = 0;
             this.txbSiSo.SelectionStart = 0;
             this.txbSiSo.ShortcutsEnabled = true;
-            this.txbSiSo.Size = new System.Drawing.Size(263, 35);
+            this.txbSiSo.Size = new System.Drawing.Size(263, 37);
             this.txbSiSo.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbSiSo.TabIndex = 11;
             this.txbSiSo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -859,7 +859,6 @@
             this.cbFindKhoa.Size = new System.Drawing.Size(263, 32);
             this.cbFindKhoa.TabIndex = 21;
             this.cbFindKhoa.Text = null;
-
             // 
             // label6
             // 
@@ -868,7 +867,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label6.Location = new System.Drawing.Point(409, 45);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 22);
+            this.label6.Size = new System.Drawing.Size(104, 27);
             this.label6.TabIndex = 20;
             this.label6.Text = "Tên Khoa";
             // 
@@ -879,7 +878,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label5.Location = new System.Drawing.Point(6, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 22);
+            this.label5.Size = new System.Drawing.Size(92, 27);
             this.label5.TabIndex = 19;
             this.label5.Text = "Tên Lớp";
             // 
@@ -1009,7 +1008,7 @@
             this.txbFindLopCN.SelectionLength = 0;
             this.txbFindLopCN.SelectionStart = 0;
             this.txbFindLopCN.ShortcutsEnabled = true;
-            this.txbFindLopCN.Size = new System.Drawing.Size(263, 35);
+            this.txbFindLopCN.Size = new System.Drawing.Size(263, 37);
             this.txbFindLopCN.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbFindLopCN.TabIndex = 11;
             this.txbFindLopCN.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

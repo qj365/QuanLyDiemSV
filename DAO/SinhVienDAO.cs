@@ -84,6 +84,7 @@ namespace QuanLyDiemSV.DAO
 
         public bool DeleteSinhVien(string masv)
         {
+            DiemSVDAO.Instance.DeleteDiemSvByMaSV(masv);
             string query = string.Format(" delete from dbo.SINHVIEN where MASV = N'{0}' ", masv);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
