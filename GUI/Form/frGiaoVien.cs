@@ -44,7 +44,7 @@ namespace QuanLyDiemSV
             string magv = txbMaGv.Text;
             string tengv = txbTenGv.Text;
             string gioitinh = txbGioiTinh.Text;
-                string ngaysinh = dpNgaySinh.Value.ToString("yyyy/MM/dd");
+            string ngaysinh = dpNgaySinh.Value.ToString("yyyy/MM/dd");
             string diachi = txbDiaChi.Text;
             string sdt = txbPhone.Text;
             string matkhau = txbPass.Text;

@@ -16,7 +16,7 @@ namespace QuanLyDiemSV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frDashboard());
+            Application.Run(new frLogin());
         }
     }
 }

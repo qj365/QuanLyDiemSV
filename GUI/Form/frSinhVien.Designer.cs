@@ -62,11 +62,11 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frSinhVien));
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frSinhVien));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,7 +83,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.dpNgaySinh = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.txbPhone = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txbGpa = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txbQueQuan = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -95,6 +94,7 @@
             this.btnSua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.dpNgaySinh = new Bunifu.UI.WinForms.BunifuDatePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +110,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label7.Location = new System.Drawing.Point(149, 435);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 22);
+            this.label7.Size = new System.Drawing.Size(50, 27);
             this.label7.TabIndex = 35;
             this.label7.Text = "SĐT";
             // 
@@ -121,7 +121,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label5.Location = new System.Drawing.Point(149, 327);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 22);
+            this.label5.Size = new System.Drawing.Size(109, 27);
             this.label5.TabIndex = 36;
             this.label5.Text = "Ngày sinh";
             // 
@@ -132,7 +132,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label2.Location = new System.Drawing.Point(149, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 22);
+            this.label2.Size = new System.Drawing.Size(143, 27);
             this.label2.TabIndex = 37;
             this.label2.Text = "Tên sinh viên";
             // 
@@ -150,7 +150,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label8.Location = new System.Drawing.Point(149, 490);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 22);
+            this.label8.Size = new System.Drawing.Size(53, 27);
             this.label8.TabIndex = 41;
             this.label8.Text = "GPA";
             // 
@@ -161,7 +161,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label6.Location = new System.Drawing.Point(149, 380);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 22);
+            this.label6.Size = new System.Drawing.Size(109, 27);
             this.label6.TabIndex = 40;
             this.label6.Text = "Quê quán";
             // 
@@ -172,7 +172,7 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label10.Location = new System.Drawing.Point(149, 223);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 22);
+            this.label10.Size = new System.Drawing.Size(81, 27);
             this.label10.TabIndex = 39;
             this.label10.Text = "Mã lớp";
             // 
@@ -183,7 +183,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label4.Location = new System.Drawing.Point(149, 285);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 22);
+            this.label4.Size = new System.Drawing.Size(98, 27);
             this.label4.TabIndex = 38;
             this.label4.Text = "Giới tính";
             // 
@@ -194,7 +194,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label3.Location = new System.Drawing.Point(149, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 22);
+            this.label3.Size = new System.Drawing.Size(137, 27);
             this.label3.TabIndex = 42;
             this.label3.Text = "Mã sinh viên";
             // 
@@ -206,7 +206,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label1.Location = new System.Drawing.Point(276, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 26);
+            this.label1.Size = new System.Drawing.Size(243, 33);
             this.label1.TabIndex = 26;
             this.label1.Text = "Thông tin sinh viên";
             // 
@@ -309,28 +309,6 @@
             this.btnThem.TextMarginLeft = 0;
             this.btnThem.UseDefaultRadiusAndThickness = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // dpNgaySinh
-            // 
-            this.dpNgaySinh.BorderRadius = 1;
-            this.dpNgaySinh.Color = System.Drawing.Color.SeaGreen;
-            this.dpNgaySinh.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dpNgaySinh.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dpNgaySinh.DisabledColor = System.Drawing.Color.Gray;
-            this.dpNgaySinh.DisplayWeekNumbers = false;
-            this.dpNgaySinh.DPHeight = 0;
-            this.dpNgaySinh.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dpNgaySinh.FillDatePicker = false;
-            this.dpNgaySinh.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpNgaySinh.ForeColor = System.Drawing.Color.Black;
-            this.dpNgaySinh.Icon = ((System.Drawing.Image)(resources.GetObject("dpNgaySinh.Icon")));
-            this.dpNgaySinh.IconColor = System.Drawing.Color.SeaGreen;
-            this.dpNgaySinh.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dpNgaySinh.Location = new System.Drawing.Point(308, 322);
-            this.dpNgaySinh.MinimumSize = new System.Drawing.Size(259, 32);
-            this.dpNgaySinh.Name = "dpNgaySinh";
-            this.dpNgaySinh.Size = new System.Drawing.Size(259, 32);
-            this.dpNgaySinh.TabIndex = 45;
             // 
             // txbPhone
             // 
@@ -997,16 +975,40 @@
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
+            // dpNgaySinh
+            // 
+            this.dpNgaySinh.BorderRadius = 1;
+            this.dpNgaySinh.Color = System.Drawing.Color.SeaGreen;
+            this.dpNgaySinh.CustomFormat = "yyyy/MM/dd";
+            this.dpNgaySinh.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.dpNgaySinh.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.dpNgaySinh.DisabledColor = System.Drawing.Color.Gray;
+            this.dpNgaySinh.DisplayWeekNumbers = false;
+            this.dpNgaySinh.DPHeight = 0;
+            this.dpNgaySinh.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dpNgaySinh.FillDatePicker = false;
+            this.dpNgaySinh.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpNgaySinh.ForeColor = System.Drawing.Color.Black;
+            this.dpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dpNgaySinh.Icon = ((System.Drawing.Image)(resources.GetObject("dpNgaySinh.Icon")));
+            this.dpNgaySinh.IconColor = System.Drawing.Color.SeaGreen;
+            this.dpNgaySinh.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.dpNgaySinh.Location = new System.Drawing.Point(308, 323);
+            this.dpNgaySinh.MinimumSize = new System.Drawing.Size(259, 32);
+            this.dpNgaySinh.Name = "dpNgaySinh";
+            this.dpNgaySinh.Size = new System.Drawing.Size(259, 33);
+            this.dpNgaySinh.TabIndex = 51;
+            // 
             // frSinhVien
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(717, 649);
+            this.Controls.Add(this.dpNgaySinh);
             this.Controls.Add(this.bunifuTextBox1);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dpNgaySinh);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -1041,7 +1043,6 @@
         #endregion
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnThem;
-        private Bunifu.UI.WinForms.BunifuDatePicker dpNgaySinh;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
@@ -1067,5 +1068,6 @@
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox bunifuTextBox1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnXoa;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSua;
+        private Bunifu.UI.WinForms.BunifuDatePicker dpNgaySinh;
     }
 }
