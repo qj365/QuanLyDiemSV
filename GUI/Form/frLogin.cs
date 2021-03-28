@@ -31,7 +31,7 @@ namespace QuanLyDiemSV
                 this.Hide();
                 db.ShowDialog();
                 txtPassword.Clear();
-                this.Show();
+                
             }
             else
             {
@@ -46,6 +46,10 @@ namespace QuanLyDiemSV
                 btnLogin_Click(sender, e);
             }
 
+        }
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -80,13 +80,16 @@ namespace QuanLyDiemSV
         }
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-                this.Close();
+            
+                this.Hide();
+            frLogin fr = new frLogin();
+            fr.ShowDialog();
+
         }
 
         

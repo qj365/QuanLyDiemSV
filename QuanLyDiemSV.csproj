@@ -283,6 +283,11 @@
   <ItemGroup>
     <None Include="Resources\mta_logo.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

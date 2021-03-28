@@ -33,73 +33,23 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.label1);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(117)))), ((int)(((byte)(230)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1184, 100);
-            this.bunifuGradientPanel1.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
-            this.label1.Location = new System.Drawing.Point(102, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Học viện Kỹ thuật Quân sự";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::QuanLyDiemSV.Properties.Resources.mta_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::QuanLyDiemSV.Properties.Resources.mta_logo;
-            this.pictureBox2.Location = new System.Drawing.Point(508, 113);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(168, 118);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -157,6 +107,18 @@
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // btnLogin
             // 
             this.btnLogin.AllowToggling = false;
@@ -194,7 +156,7 @@
             this.btnLogin.IdleIconLeftImage = null;
             this.btnLogin.IdleIconRightImage = null;
             this.btnLogin.IndicateFocus = false;
-            this.btnLogin.Location = new System.Drawing.Point(479, 475);
+            this.btnLogin.Location = new System.Drawing.Point(458, 475);
             this.btnLogin.Name = "btnLogin";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(191)))), ((int)(((byte)(162)))));
             stateProperties1.BorderRadius = 40;
@@ -221,23 +183,79 @@
             this.btnLogin.UseDefaultRadiusAndThickness = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // bunifuElipse1
+            // bunifuGradientPanel1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnThoat);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(117)))), ((int)(((byte)(230)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1189, 100);
+            this.bunifuGradientPanel1.TabIndex = 6;
             // 
-            // bunifuDragControl1
+            // label1
             // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel1;
-            this.bunifuDragControl1.Vertical = true;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
+            this.label1.Location = new System.Drawing.Point(102, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(290, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Học viện Kỹ thuật Quân sự";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::QuanLyDiemSV.Properties.Resources.mta_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 84);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::QuanLyDiemSV.Properties.Resources.mta_logo;
+            this.pictureBox2.Location = new System.Drawing.Point(508, 113);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(168, 118);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.Transparent;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.Location = new System.Drawing.Point(1132, 0);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(57, 100);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 681);
+            this.ClientSize = new System.Drawing.Size(1189, 681);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label4);
@@ -275,6 +293,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLogin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
 
