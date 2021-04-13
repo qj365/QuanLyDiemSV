@@ -67,7 +67,6 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(242)))), ((int)(((byte)(203)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dtgvGiaoVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvGiaoVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvGiaoVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvGiaoVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvGiaoVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -368,7 +367,7 @@
             this.txbTengv.SelectionLength = 0;
             this.txbTengv.SelectionStart = 0;
             this.txbTengv.ShortcutsEnabled = true;
-            this.txbTengv.Size = new System.Drawing.Size(263, 35);
+            this.txbTengv.Size = new System.Drawing.Size(263, 37);
             this.txbTengv.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txbTengv.TabIndex = 11;
             this.txbTengv.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -386,7 +385,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label5.Location = new System.Drawing.Point(3, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 22);
+            this.label5.Size = new System.Drawing.Size(62, 27);
             this.label5.TabIndex = 12;
             this.label5.Text = "Khoa";
             // 
@@ -397,7 +396,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label7.Location = new System.Drawing.Point(3, 49);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 22);
+            this.label7.Size = new System.Drawing.Size(142, 27);
             this.label7.TabIndex = 13;
             this.label7.Text = "Tên giáo viên";
             // 

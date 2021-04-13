@@ -84,14 +84,11 @@ namespace QuanLyDiemSV
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
-        {
-            
-                this.Hide();
+        {          
+            this.Hide();
             frLogin fr = new frLogin();
             fr.ShowDialog();
 
-        }
-
-        
+        }      
     }
 }
