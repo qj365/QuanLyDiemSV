@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyDiemSV.DAO;
 using QuanLyDiemSV.DTO;
+using ClosedXML.Excel;
 
 namespace QuanLyDiemSV.GUI.User_Control
 {
@@ -74,6 +75,14 @@ namespace QuanLyDiemSV.GUI.User_Control
         private void btnFindSV_Click(object sender, EventArgs e)
         {
             diemsvList.DataSource = SearchDiemSVByMaSV((cbFindSV.SelectedItem as SinhVien).MaSV);
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            using (frDiemExcel save = new frDiemExcel())
+            {
+                save.ShowDialog();
+            }
         }
     }
 }

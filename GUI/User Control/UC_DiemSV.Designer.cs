@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_DiemSV));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -44,6 +45,9 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnFindSV = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnFindLopHP = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -52,10 +56,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dtgvDiemSV = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.mASVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mALOPHPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIEMCCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIEMTXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIEMTHIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dIEMTBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bANGDIEMCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnTuyChon = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnXem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnLuu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDiemSV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bANGDIEMCTBindingSource)).BeginInit();
+
             this.SuspendLayout();
             // 
             // groupBox2
@@ -293,6 +307,8 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dtgvDiemSV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvDiemSV.AutoGenerateColumns = false;
+            this.dtgvDiemSV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDiemSV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvDiemSV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvDiemSV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -305,6 +321,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgvDiemSV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvDiemSV.ColumnHeadersHeight = 40;
+            this.dtgvDiemSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mASVDataGridViewTextBoxColumn,
+            this.mALOPHPDataGridViewTextBoxColumn,
+            this.dIEMCCDataGridViewTextBoxColumn,
+            this.dIEMTXDataGridViewTextBoxColumn,
+            this.dIEMTHIDataGridViewTextBoxColumn,
+            this.dIEMTBDataGridViewTextBoxColumn});
             this.dtgvDiemSV.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dtgvDiemSV.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dtgvDiemSV.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -321,6 +344,7 @@
             this.dtgvDiemSV.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dtgvDiemSV.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dtgvDiemSV.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgvDiemSV.DataSource = this.bANGDIEMCTBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -343,6 +367,55 @@
             this.dtgvDiemSV.Size = new System.Drawing.Size(771, 380);
             this.dtgvDiemSV.TabIndex = 21;
             this.dtgvDiemSV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // mASVDataGridViewTextBoxColumn
+            // 
+            this.mASVDataGridViewTextBoxColumn.DataPropertyName = "MASV";
+            this.mASVDataGridViewTextBoxColumn.HeaderText = "MASV";
+            this.mASVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mASVDataGridViewTextBoxColumn.Name = "mASVDataGridViewTextBoxColumn";
+            // 
+            // mALOPHPDataGridViewTextBoxColumn
+            // 
+            this.mALOPHPDataGridViewTextBoxColumn.DataPropertyName = "MALOPHP";
+            this.mALOPHPDataGridViewTextBoxColumn.HeaderText = "MALOPHP";
+            this.mALOPHPDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mALOPHPDataGridViewTextBoxColumn.Name = "mALOPHPDataGridViewTextBoxColumn";
+            // 
+            // dIEMCCDataGridViewTextBoxColumn
+            // 
+            this.dIEMCCDataGridViewTextBoxColumn.DataPropertyName = "DIEMCC";
+            this.dIEMCCDataGridViewTextBoxColumn.HeaderText = "DIEMCC";
+            this.dIEMCCDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dIEMCCDataGridViewTextBoxColumn.Name = "dIEMCCDataGridViewTextBoxColumn";
+            // 
+            // dIEMTXDataGridViewTextBoxColumn
+            // 
+            this.dIEMTXDataGridViewTextBoxColumn.DataPropertyName = "DIEMTX";
+            this.dIEMTXDataGridViewTextBoxColumn.HeaderText = "DIEMTX";
+            this.dIEMTXDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dIEMTXDataGridViewTextBoxColumn.Name = "dIEMTXDataGridViewTextBoxColumn";
+            // 
+            // dIEMTHIDataGridViewTextBoxColumn
+            // 
+            this.dIEMTHIDataGridViewTextBoxColumn.DataPropertyName = "DIEMTHI";
+            this.dIEMTHIDataGridViewTextBoxColumn.HeaderText = "DIEMTHI";
+            this.dIEMTHIDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dIEMTHIDataGridViewTextBoxColumn.Name = "dIEMTHIDataGridViewTextBoxColumn";
+            // 
+            // dIEMTBDataGridViewTextBoxColumn
+            // 
+            this.dIEMTBDataGridViewTextBoxColumn.DataPropertyName = "DIEMTB";
+            this.dIEMTBDataGridViewTextBoxColumn.HeaderText = "DIEMTB";
+            this.dIEMTBDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dIEMTBDataGridViewTextBoxColumn.Name = "dIEMTBDataGridViewTextBoxColumn";
+            // 
+            // bANGDIEMCTBindingSource
+            // 
+            this.bANGDIEMCTBindingSource.DataMember = "BANGDIEMCT";
+            // 
+            // appData
+            //
             // 
             // btnTuyChon
             // 
@@ -445,7 +518,7 @@
             this.btnXem.IdleIconLeftImage = null;
             this.btnXem.IdleIconRightImage = null;
             this.btnXem.IndicateFocus = false;
-            this.btnXem.Location = new System.Drawing.Point(806, 315);
+            this.btnXem.Location = new System.Drawing.Point(806, 344);
             this.btnXem.Name = "btnXem";
             stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(211)))), ((int)(((byte)(161)))));
             stateProperties7.BorderRadius = 5;
@@ -472,10 +545,78 @@
             this.btnXem.UseDefaultRadiusAndThickness = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
+            // btnLuu
+            // 
+            this.btnLuu.AllowToggling = false;
+            this.btnLuu.AnimationSpeed = 200;
+            this.btnLuu.AutoGenerateColors = true;
+            this.btnLuu.BackColor = System.Drawing.Color.Transparent;
+            this.btnLuu.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.btnLuu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLuu.BackgroundImage")));
+            this.btnLuu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLuu.ButtonText = "Lưu";
+            this.btnLuu.ButtonTextMarginLeft = 0;
+            this.btnLuu.ColorContrastOnClick = 45;
+            this.btnLuu.ColorContrastOnHover = 45;
+            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnLuu.CustomizableEdges = borderEdges5;
+            this.btnLuu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLuu.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnLuu.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnLuu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnLuu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnLuu.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.IconMarginLeft = 11;
+            this.btnLuu.IconPadding = 10;
+            this.btnLuu.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(175)))), ((int)(((byte)(85)))));
+            this.btnLuu.IdleBorderRadius = 5;
+            this.btnLuu.IdleBorderThickness = 1;
+            this.btnLuu.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLuu.IdleIconLeftImage = null;
+            this.btnLuu.IdleIconRightImage = null;
+            this.btnLuu.IndicateFocus = false;
+            this.btnLuu.Location = new System.Drawing.Point(806, 445);
+            this.btnLuu.Name = "btnLuu";
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(211)))), ((int)(((byte)(161)))));
+            stateProperties9.BorderRadius = 5;
+            stateProperties9.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties9.BorderThickness = 1;
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            stateProperties9.ForeColor = System.Drawing.Color.White;
+            stateProperties9.IconLeftImage = null;
+            stateProperties9.IconRightImage = null;
+            this.btnLuu.onHoverState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(96)))), ((int)(((byte)(46)))));
+            stateProperties10.BorderRadius = 5;
+            stateProperties10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties10.BorderThickness = 1;
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(105)))), ((int)(((byte)(140)))));
+            stateProperties10.ForeColor = System.Drawing.Color.White;
+            stateProperties10.IconLeftImage = null;
+            stateProperties10.IconRightImage = null;
+            this.btnLuu.OnPressedState = stateProperties10;
+            this.btnLuu.Size = new System.Drawing.Size(151, 45);
+            this.btnLuu.TabIndex = 29;
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLuu.TextMarginLeft = 0;
+            this.btnLuu.UseDefaultRadiusAndThickness = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // bANGDIEMCTTableAdapter
+            // 
+            // 
             // UC_DiemSV
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dtgvDiemSV);
@@ -485,6 +626,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDiemSV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bANGDIEMCTBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -501,5 +643,13 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnXem;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnFindLopHP;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnFindSV;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLuu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mASVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mALOPHPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIEMCCDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIEMTXDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIEMTHIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dIEMTBDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource bANGDIEMCTBindingSource;
     }
 }
