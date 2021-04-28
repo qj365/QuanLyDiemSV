@@ -89,6 +89,12 @@ namespace QuanLyDiemSV
             frLogin fr = new frLogin();
             fr.ShowDialog();
 
-        }      
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            UC_Help uc = new UC_Help();
+            addControlToPanel(uc);
+        }
     }
 }

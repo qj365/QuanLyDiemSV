@@ -34,15 +34,16 @@
             this.pnlControl = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnHelp = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDangXuat = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -53,8 +54,8 @@
             this.btnHocPhan = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLopCN = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnKhoa = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
+            this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,75 +84,6 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel2;
             this.bunifuDragControl1.Vertical = true;
-            // 
-            // bunifuGradientPanel3
-            // 
-            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
-            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.label3);
-            this.bunifuGradientPanel3.Controls.Add(this.lblDate);
-            this.bunifuGradientPanel3.Controls.Add(this.lblTime);
-            this.bunifuGradientPanel3.Controls.Add(this.label2);
-            this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.SeaGreen;
-            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
-            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
-            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuGradientPanel3.Location = new System.Drawing.Point(215, 38);
-            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
-            this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(985, 89);
-            this.bunifuGradientPanel3.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(60, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Giáo viên môn ABC";
-            // 
-            // lblDate
-            // 
-            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDate.AutoSize = true;
-            this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(769, 51);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(118, 22);
-            this.lblDate.TabIndex = 3;
-            this.lblDate.Text = "DD/MM/YYYY";
-            // 
-            // lblTime
-            // 
-            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.White;
-            this.lblTime.Location = new System.Drawing.Point(780, 21);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(92, 22);
-            this.lblTime.TabIndex = 3;
-            this.lblTime.Text = "HH:MM:SS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(46, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 22);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Xin Chào, Nguyễn Văn A";
             // 
             // bunifuGradientPanel2
             // 
@@ -194,14 +126,84 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(94)))), ((int)(((byte)(52)))));
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 22);
+            this.label1.Size = new System.Drawing.Size(275, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Học viện Kỹ thuật Quân sự";
+            // 
+            // bunifuGradientPanel3
+            // 
+            this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
+            this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.Controls.Add(this.label3);
+            this.bunifuGradientPanel3.Controls.Add(this.lblDate);
+            this.bunifuGradientPanel3.Controls.Add(this.lblTime);
+            this.bunifuGradientPanel3.Controls.Add(this.label2);
+            this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.SeaGreen;
+            this.bunifuGradientPanel3.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.bunifuGradientPanel3.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.bunifuGradientPanel3.GradientTopRight = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuGradientPanel3.Location = new System.Drawing.Point(215, 38);
+            this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
+            this.bunifuGradientPanel3.Quality = 10;
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(985, 89);
+            this.bunifuGradientPanel3.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(60, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 27);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Giáo viên môn ABC";
+            // 
+            // lblDate
+            // 
+            this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(769, 51);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(144, 27);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = "DD/MM/YYYY";
+            // 
+            // lblTime
+            // 
+            this.lblTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(780, 21);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(114, 27);
+            this.lblTime.TabIndex = 3;
+            this.lblTime.Text = "HH:MM:SS";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(46, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(248, 27);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Xin Chào, Nguyễn Văn A";
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnHelp);
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.btnDangXuat);
             this.bunifuGradientPanel1.Controls.Add(this.btnLopHP);
@@ -221,6 +223,44 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(215, 720);
             this.bunifuGradientPanel1.TabIndex = 3;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Active = false;
+            this.btnHelp.Activecolor = System.Drawing.Color.SeaGreen;
+            this.btnHelp.BackColor = System.Drawing.Color.Transparent;
+            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHelp.BorderRadius = 0;
+            this.btnHelp.ButtonText = "   Hướng dẫn";
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.DisabledColor = System.Drawing.Color.Gray;
+            this.btnHelp.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnHelp.Iconimage = global::QuanLyDiemSV.Properties.Resources.icons8_help_52;
+            this.btnHelp.Iconimage_right = null;
+            this.btnHelp.Iconimage_right_Selected = null;
+            this.btnHelp.Iconimage_Selected = null;
+            this.btnHelp.IconMarginLeft = 0;
+            this.btnHelp.IconMarginRight = 0;
+            this.btnHelp.IconRightVisible = true;
+            this.btnHelp.IconRightZoom = 0D;
+            this.btnHelp.IconVisible = true;
+            this.btnHelp.IconZoom = 75D;
+            this.btnHelp.IsTab = true;
+            this.btnHelp.Location = new System.Drawing.Point(0, 547);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnHelp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnHelp.selected = false;
+            this.btnHelp.Size = new System.Drawing.Size(215, 56);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "   Hướng dẫn";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.Textcolor = System.Drawing.Color.White;
+            this.btnHelp.TextFont = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // panel1
             // 
@@ -266,7 +306,7 @@
             this.btnDangXuat.IconVisible = true;
             this.btnDangXuat.IconZoom = 75D;
             this.btnDangXuat.IsTab = true;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 547);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 604);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Normalcolor = System.Drawing.Color.Transparent;
@@ -561,10 +601,10 @@
             this.Name = "frDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.bunifuGradientPanel3.ResumeLayout(false);
-            this.bunifuGradientPanel3.PerformLayout();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
+            this.bunifuGradientPanel3.ResumeLayout(false);
+            this.bunifuGradientPanel3.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -597,5 +637,6 @@
         private System.Windows.Forms.Button btnThoat;
         private Bunifu.Framework.UI.BunifuFlatButton btnLopHP;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnHelp;
     }
 }

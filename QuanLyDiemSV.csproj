@@ -254,6 +254,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUANLYDIEMSVDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User Control\UC_Help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User Control\UC_Help.Designer.cs">
+      <DependentUpon>UC_Help.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form\frDiemExcel.resx">
       <DependentUpon>frDiemExcel.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,6 +310,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="GUI\User Control\UC_Help.resx">
+      <DependentUpon>UC_Help.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DiemSVData.xsc">
       <DependentUpon>DiemSVData.xsd</DependentUpon>
     </None>
@@ -348,6 +357,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-delete-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-help-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-help-52.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

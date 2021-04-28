@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMQAAAAtCAYAAADx7cQhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE7SURBVHhe7dOxTcRQFERRh5RGAf67IRFF0AMRDVABXkK6
+        oAMaIEBIiAAC8GgndAXrM9IJbD1nvpOZbWx+mq+Py/x6OI0/2Iv882MZt83gvONyHIdlfGx9AJdunMbn
+        YZnvmsM0rQ9vW4ewH/N3c1iD2DyAfWkOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO
+        goBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO
+        goBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO0zSW+X3rAPZinObf
+        5pAgxv364mvrEC7d+u//rA28NIfzjs/jYesYLl1iuHm8uWoKZnbeNP0DcSl3wrxVJekAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnNext.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMQAAAAtCAYAAADx7cQhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE7SURBVHhe7dOxTcRQFERRh5RGAf67IRFF0AMRDVABXkK6
+        oAMaIEBIiAAC8GgndAXrM9IJbD1nvpOZbWx+mq+Py/x6OI0/2Iv882MZt83gvONyHIdlfGx9AJdunMbn
+        YZnvmsM0rQ9vW4ewH/N3c1iD2DyAfWkOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO
+        goBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO
+        goBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgOgoBoDoKAaA6CgGgO0zSW+X3rAPZinObf
+        5pAgxv364mvrEC7d+u//rA28NIfzjs/jYesYLl1iuHm8uWoKZnbeNP0DcSl3wrxVJekAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Giao diện Quản lí khoa có tác dụng quản lí các khoa có trong trường.
+ 
+Người dùng có thể Thêm, Sửa, Xóa các khoa dựa trên các button có trên giao diện.
+
+Người dùng chọn vào các ô dữ liệu trên bảng dữ liệu để xem thông tin chi tiết và thực hiện các hành động thêm, sửa, xóa.
+
+Button Thêm dùng để thêm một khoa mới, sao cho khoa mới phải có mã khoa khác với các mã khoa cũ.
+
+Button Sửa dùng để sửa thông tin của khoa, người dùng không thể sửa mã khoa.
+
+Button Xóa dùng để xóa khoa mà mình mong muốn.
+
+Bảng dữ liệu hiển thị thông tin các khoa có trong Database.</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Giao diện Quản lí lớp chuyên ngành có tác dụng quản lí các lớp chuyên ngành có trong trường.
+ 
+Người dùng có thể Thêm, Sửa, Xóa các lớp chuyên ngành dựa trên các button có trên giao diện và tìm kiếm.
+
+Người dùng chọn vào các ô dữ liệu trên bảng dữ liệu để xem thông tin chi tiết và thực hiện các hành động thêm, sửa, xóa.
+
+Button Thêm dùng để thêm một lớp chuyên ngành mới, sao cho lớp chuyên ngành mới phải có mã lớp chuyên ngành khác với các mã lớp chuyên ngành  cũ. Người dùng bắt buộc phải nhập mã lớp chuyên ngành, sĩ số, tên khoa, mã giáo viên để thêm.
+
+Button Sửa dùng để sửa thông tin của lớp chuyên ngành, người dùng không thể sửa mã lớp chuyên ngành. Người dùng bắt buộc phải nhập mã lớp chuyên ngành, sĩ số, tên khoa, mã giáo viên để sửa.
+
+Button Xóa dùng để xóa lớp chuyên ngành mà mình mong muốn.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Bảng dữ liệu hiển thị thông tin các lớp chuyên ngành có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm lớp chuyên ngành theo tên khoa, hoặc theo cả hai tiêu chí tên khoa và tên lớp chuyên ngành.</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>Giao diện Quản lí học phần có tác dụng quản lí các học phần có trong trường.
+ 
+Người dùng có thể Thêm, Sửa, Xóa các học phần dựa trên các button có trên giao diện và tìm kiếm.
+
+Người dùng chọn vào các ô dữ liệu trên bảng dữ liệu để xem thông tin chi tiết và thực hiện các hành động thêm, sửa, xóa.
+
+Button Thêm dùng để thêm một học phần mới, sao cho học phần mới phải có mã học phần khác với các mã học phần cũ. Người dùng bắt buộc phải nhập mã học phần, số tín chỉ, số tiết, tên khoa để thêm.
+
+Button Sửa dùng để sửa thông tin của học phần, người dùng không thể sửa mã học phần. Người dùng bắt buộc phải nhập mã học phần, số tín chỉ, số tiết, tên khoa để sửa.
+
+Button Xóa dùng để xóa học phần mà mình mong muốn.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Bảng dữ liệu hiển thị thông tin các học phần có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm học phần theo tên khoa, hoặc theo cả hai tiêu chí tên khoa và tên học phần.</value>
+  </data>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Giao diện Quản lí lớp học phần có tác dụng quản lí các lớp học phần có trong trường.
+ 
+Người dùng có thể Thêm, Sửa, Xóa các lớp học phần dựa trên các button có trên giao diện và tìm kiếm.
+
+Người dùng chọn vào các ô dữ liệu trên bảng dữ liệu để xem thông tin chi tiết và thực hiện các hành động thêm, sửa, xóa.
+
+Button Thêm dùng để thêm một lớp học phần mới, sao cho lớp học phần mới phải có mã lớp học phần khác với các mã lớp học phần cũ. Người dùng bắt buộc phải nhập mã lớp học phần, sĩ số và tên học phần để thêm.
+
+Button Sửa dùng để sửa thông tin của lớp học phần, người dùng không thể sửa mã lớp học phần. Người dùng bắt buộc phải nhập mã lớp học phần, sĩ số và tên học phần để sửa.
+
+Button Xóa dùng để xóa lớp học phần mà mình mong muốn.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Bảng dữ liệu hiển thị thông tin các học phần có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm lớp học phần theo tên học phần.</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>Giao diện Quản lí giáo viên có tác dụng quản lí các giáo viên có trong trường.
+ 
+Người dùng có thể bấm vào button Tùy chọn để vào form Thêm, Sửa, Xóa giáo viên.
+
+Button Thêm dùng để thêm một giáo viên mới, sao cho giáo viên mới phải có mã giáo viên khác với các mã giáo viên cũ. Khi thêm người dùng bắt buộc phải nhập đầy đủ tất cả thông tin.
+
+Button Sửa dùng để sửa thông tin của giáo viên, người dùng không thể sửa mã giáo viên. Khi sửa người dùng bắt buộc phải nhập mã giáo viên và giới tính.
+
+Button Xóa dùng để xóa giáo viên mà mình mong muốn. Người dùng có thể chỉ cần nhập mã giáo viên để xóa.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Bảng dữ liệu hiển thị thông tin các học phần có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm giáo viên theo tên khoa, hoặc theo cả hai tiêu chí tên khoa và tên giáo viên.</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>Giao diện Quản lí sinh viên có tác dụng quản lí các sinh viên có trong trường.
+ 
+Người dùng có thể bấm vào button Tùy chọn để vào form Thêm, Sửa, Xóa sinh viên .
+
+Button Thêm dùng để thêm một sinh viên mới, sao cho sinh viên mới phải có mã sinh viên khác với các mã sinh viên cũ. Khi thêm người dùng bắt buộc phải nhập đầy đủ tất cả thông tin.
+
+Button Sửa dùng để sửa thông tin của sinh viên, người dùng không thể sửa mã sinh viên. Khi sửa người dùng bắt buộc phải nhập mã sinh viên, giới tính và mã lớp chuyên ngành.
+
+Button Xóa dùng để xóa sinh viên mà mình mong muốn. Người dùng có thể chỉ cần nhập mã sinh viên để xóa.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Bảng dữ liệu hiển thị thông tin các học phần có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm sinh viên theo tên sinh viên , hoặc theo tên lớp chuyên ngành, hoặc theo cả hai tiêu chí.</value>
+  </data>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>Giao diện Quản lí điểm sinh viên có tác dụng quản lí điểm sinh viên có trong trường.
+ 
+Người dùng có thể bấm vào button Tùy chọn để vào form Thêm, Sửa, Xóa điểm sinh viên .
+
+Button Thêm dùng để thêm mới điểm sinh viên, sao cho khi thêm trong cùng một lớp học phần không được có hai sinh viên có mã sinh viên giống nhau. Khi thêm người dùng bắt buộc phải nhập đầy đủ tất cả thông tin.
+
+Button Sửa dùng để sửa điểm sinh viên, sao cho khi sửa trong cùng một lớp học phần không được có hai sinh viên có mã sinh viên giống nhau. Khi sửa người dùng bắt buộc phải nhập đầy đủ tất cả thông tin.
+
+Button Xóa dùng để điểm sinh viên mà mình mong muốn. Người dùng có thể chỉ cần nhập mã sinh viên để xóa.
+
+Button Xem dùng để Reload lại bảng dữ liệu.
+
+Button Lưu dùng để hiển thị ra form Lưu dữ liệu vào file Excel.
+
+Bảng dữ liệu hiển thị thông tin các học phần có trong Database.
+
+Trên thanh tìm kiếm người dùng có thể tìm kiếm sinh viên theo mã lớp học phần, hoặc theo cả hai tiêu chí mã lớp học phần và tên sinh viên.</value>
+  </data>
+  <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAgD8L
+</value>
+  </data>
+</root>
